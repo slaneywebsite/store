@@ -1,0 +1,83 @@
+{
+    "brands": [
+      {
+        "brandName": "12mm Story",
+        "items": [
+          {
+            "image": "img/timber/store12mm/55675-Roverto-Oak-1.webp",
+            "itemName": "Roverto Oak 55675",
+            "price": "€36.98",
+            "acRating": "AC5",
+            "boardSize": "1285x192x12mm",
+            "piece": "6 pieces per box",
+            "coverage": "1.480m2 per box"
+          },
+          {
+            "image": "img/timber/store12mm/53343-River-Oak-1.webp",
+            "itemName": "River Oak 53343",
+            "price": "€36.98",
+            "acRating": "AC5",
+            "boardSize": "1285x192x12mm",
+            "piece": "6 pieces per box",
+            "coverage": "1.480m2 per box"
+          },
+          {
+            "image": "img/timber/store12mm/53344-Smoked-Oak-1.webp",
+            "itemName": "Smoked Oak 53344",
+            "price": "€36.98",
+            "acRating": "AC5",
+            "boardSize": "1285x192x12mm",
+            "piece": "6 pieces per box",
+            "coverage": "1.480m2 per box"
+          },
+          {
+            "image": "img/timber/store12mm/55233-Waldorf-OAk-2.webp",
+            "itemName": "Waldorf Oak 55233",
+            "price": "€36.98",
+            "acRating": "AC5",
+            "boardSize": "1285x192x12mm",
+            "piece": "6 pieces per box",
+            "coverage": "1.480m2 per box"
+          },
+          {
+            "image": "img/timber/store12mm/55234-Austin-Oak-2.webp",
+            "itemName": "Austin Oak 55234",
+            "price": "€36.98",
+            "acRating": "AC5",
+            "boardSize": "1285x192x12mm",
+            "piece": "6 pieces per box",
+            "coverage": "1.480m2 per box"
+          },
+          {
+            "image": "img/timber/store12mm/56131-Alpine-Oak-2.webp",
+            "itemName": "Alpine Oak 56131",
+            "price": "€36.98",
+            "acRating": "AC5",
+            "boardSize": "1285x192x12mm",
+            "piece": "6 pieces per box",
+            "coverage": "1.480m2 per box"
+          },
+          {
+            "image": "img/timber/store12mm/56130-Kolari-Oak-2.webp",
+            "itemName": "Kolari Oak 56130",
+            "price": "€36.98",
+            "acRating": "AC5",
+            "boardSize": "1285x192x12mm",
+            "piece": "6 pieces per box",
+            "coverage": "1.480m2 per box"
+          },
+          {
+            "image": "img/timber/store12mm/55972-Vintage-Oak-2.webp",
+            "itemName": "Vintage Oak 55972",
+            "price": "€36.98",
+            "acRating": "AC5",
+            "boardSize": "1285x192x12mm",
+            "piece": "6 pieces per box",
+            "coverage": "1.480m2 per box"
+          }
+        ]
+      }
+      
+    ]
+  }
+  

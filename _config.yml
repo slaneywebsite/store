@@ -1,0 +1,11 @@
+title: "Slaneyside"
+description: "Shop Sofas, Bedroom Furniture, Mattresses, Outdoor, Living Room & More - Home Furniture at Slaneyside"
+baseurl: ""  # Adjust according to your repo name
+url: "https://www.slaneyside.ie/"  # Replace with your GitHub username
+
+---
+layout: default
+title: "Page Not Found"
+permalink: /404.html
+---
+
