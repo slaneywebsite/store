@@ -6,24 +6,6 @@ function showBrand(brandIndex) {
 }
 
 
-// Initialize the application
-document.addEventListener('DOMContentLoaded', function () {
-    // Fetch data from JSON file
-    fetch('data/vinyl-data.json')
-        .then(response => response.json())
-        .then(data => {
-            showBrand(1); // Display the first brand
-        })
-        .catch(error => console.error('Error fetching data:', error));
-
-    // Load cart from localStorage if it exists
-    const storedCart = localStorage.getItem('cart');
-    if (storedCart) {
-        cart = JSON.parse(storedCart);
-        updateCartDisplay(); // Update the cart display
-    }
-});
-
 function calculateItemPrice(brandPrice, priceDisplayId, orderButtonId, lengthElement) {
     const length = parseFloat(lengthElement.value);
     if (!isNaN(length) && length > 0) {
