@@ -1,7 +1,3 @@
-let cart = [];
-let currentPage = 1; // Ensure this variable is defined
-
-
 function showBrand(brandIndex) {
     const brands = document.querySelectorAll('.brand-content');
     brands.forEach((brand, index) => {

@@ -360,7 +360,6 @@ iframe {
 .dropdown-content a:hover {
   color: #ffffff;
 }
-
 /* Adjust styles for smaller screens */
 @media (max-width: 768px) {
   .dropdown-content {
@@ -371,7 +370,6 @@ iframe {
     max-height: none;
     overflow-y: auto;
   }
-
   .dropdown.active .dropdown-content {
     display: block;
   }
@@ -751,6 +749,7 @@ a:hover, a:focus, a:active {
       font-size: 0.9rem;
       padding: 8px 16px;
   }
+
 }
 
 .ec-minicart {
@@ -919,11 +918,9 @@ figure {
   margin: 0 0 1rem;
 }
 
-img {
-  vertical-align: middle;
-  border-style: none;
+.logo-img{
+height: 150px;
 }
-
 svg {
   overflow: hidden;
   vertical-align: middle;
@@ -1343,6 +1340,7 @@ pre code {
   .container, .container-sm, .container-md {
     max-width: 720px;
   }
+ 
 }
 
 @media (min-width: 992px) {
@@ -4795,7 +4793,7 @@ input[type="button"].btn-block {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
+  background-color: #df62ad;
   border: 1px solid transparent;
 }
 
@@ -6840,7 +6838,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #252531 !important;
+  background-color: #fff !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -6900,7 +6898,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #181818 !important;
+  background-color: #fff !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -9999,6 +9997,8 @@ button.bg-dark:focus {
   color: #fff !important;
 }
 
+
+
 .text-primary {
   color: #DF62AD !important;
 }
@@ -10251,7 +10251,7 @@ h6 {
   height: 50%;
   top: 0;
   left: 0;
-  background: #181818;
+  background: #fff;
 }
 
 .nav-bar::after {
@@ -10267,7 +10267,7 @@ h6 {
 .navbar-dark .navbar-nav .nav-link {
   padding: 30px 15px;
   letter-spacing: 1px;
-  color: #F3F6FF;
+  color: #000;
   outline: none;
 }
 

@@ -22,13 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .catch(error => console.error('Error fetching data:', error));
 
-    // Load cart from localStorage if it exists
-    const storedCart = localStorage.getItem('cart');
-    if (storedCart) {
-        cart = JSON.parse(storedCart);
-        updateCartDisplay(); // Update the cart display
-    }
-
 });
 
 function calculateItemPrice(brandPrice, priceDisplayId, orderButtonId, lengthElement) {
