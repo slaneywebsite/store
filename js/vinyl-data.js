@@ -31,17 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-function calculateItemPrice(brandPrice, priceDisplayId, orderButtonId, lengthElement) {
-    const length = parseFloat(lengthElement.value);
-    if (!isNaN(length) && length > 0) {
-        const price = (length * 13 / 9) * brandPrice;
-        document.getElementById(priceDisplayId).innerHTML = '€' + price.toFixed(2);
-        document.getElementById(orderButtonId).style.display = 'block';
-    } else {
-        document.getElementById(priceDisplayId).innerHTML = '€0.00';
-        document.getElementById(orderButtonId).style.display = 'none';
-    }
-}
 function decreaseQuantity(index) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     if (cart[index]) {
