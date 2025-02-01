@@ -141,13 +141,3 @@ function toggleReadMore() {
 setTimeout(function() {
     document.getElementById('message').classList.add('show');
 }, 5000); // 5 seconds
-
-
-
-// Calculate Price for the main calculator
-function calculatePrice() {
-    var brandPrice = parseFloat(document.getElementById('brand').value);
-    var length = parseFloat(document.getElementById('length').value);
-    var price = (length * 13 / 9) * brandPrice;
-    document.getElementById('priceDisplay').innerHTML = '€' + price.toFixed(2);
-}
