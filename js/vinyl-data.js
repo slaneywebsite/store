@@ -42,38 +42,6 @@ function calculateItemPrice(brandPrice, priceDisplayId, orderButtonId, lengthEle
         document.getElementById(orderButtonId).style.display = 'none';
     }
 }
-
-function addToCart(item, lengthSelect) {
-    const length = lengthSelect.value;
-    if (length) {
-        const brandPrice = parseFloat(item.price.replace('€', ''));
-        const lengthValue = parseFloat(length);
-        if (!isNaN(lengthValue) && lengthValue > 0) {
-            const price = (lengthValue * 13 / 9) * brandPrice;
-            const cartItem = {
-                itemName: item.itemName,
-                length: length,
-                price: price.toFixed(2),
-                quantity: 1
-            };
-
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
-            const existingItemIndex = cart.findIndex(cartItem => cartItem.itemName === item.itemName && cartItem.length === length);
-            if (existingItemIndex > -1) {
-                cart[existingItemIndex].quantity += 1;
-            } else {
-                cart.push(cartItem);
-            }
-
-            localStorage.setItem('cart', JSON.stringify(cart));
-            updateCartDisplay(); // Update the cart display
-        } else {
-            console.error('Invalid length value');
-        }
-    } else {
-        alert('Please select a length.');
-    }
-}
 function decreaseQuantity(index) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     if (cart[index]) {
