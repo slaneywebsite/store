@@ -5,19 +5,6 @@ function showBrand(brandIndex) {
     });
 }
 
-
-function calculateItemPrice(brandPrice, priceDisplayId, orderButtonId, lengthElement) {
-    const length = parseFloat(lengthElement.value);
-    if (!isNaN(length) && length > 0) {
-        const price = (length * 13 / 9) * brandPrice;
-        document.getElementById(priceDisplayId).innerHTML = '€' + price.toFixed(2);
-        document.getElementById(orderButtonId).style.display = 'block';
-    } else {
-        document.getElementById(priceDisplayId).innerHTML = '€0.00';
-        document.getElementById(orderButtonId).style.display = 'none';
-    }
-}
-
 function addToCart(item, lengthSelect) {
     const length = lengthSelect.value;
     if (length) {
