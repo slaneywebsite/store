@@ -10,20 +10,6 @@ const CarpetApp = (function () {
         // Add any other functions you need to expose
     };
 
-
-// Initialize the application
-document.addEventListener('DOMContentLoaded', function () {
-    // Fetch data from JSON file
-    fetch('data/vinyl-data.json')
-        .then(response => response.json())
-        .then(data => {
-            generateBrandContent(data.brands); // Generate content for each brand
-            showBrand(1); // Display the first brand
-        })
-        .catch(error => console.error('Error fetching data:', error));
-
-});
-
 function decreaseQuantity(index) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     if (cart[index]) {
