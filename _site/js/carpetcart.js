@@ -1,45 +1,6 @@
 let cart = [];
 let currentPage = 1; // Ensure this variable is defined
 
-
-function showBrand(brandIndex) {
-    const brands = document.querySelectorAll('.brand-content');
-    brands.forEach((brand, index) => {
-        brand.style.display = (index + 1 === brandIndex) ? 'block' : 'none';
-    });
-}
-
-
-// Initialize the application
-document.addEventListener('DOMContentLoaded', function () {
-    // Fetch data from JSON file
-    fetch('data/carpet-data.json')
-        .then(response => response.json())
-        .then(data => {
-            showBrand(1); // Display the first brand
-        })
-        .catch(error => console.error('Error fetching data:', error));
-
-    // Load cart from localStorage if it exists
-    const storedCart = localStorage.getItem('cart');
-    if (storedCart) {
-        cart = JSON.parse(storedCart);
-        updateCartDisplay(); // Update the cart display
-    }
-});
-
-function calculateItemPrice(brandPrice, priceDisplayId, orderButtonId, lengthElement) {
-    const length = parseFloat(lengthElement.value);
-    if (!isNaN(length) && length > 0) {
-        const price = (length * 13 / 9) * brandPrice;
-        document.getElementById(priceDisplayId).innerHTML = '€' + price.toFixed(2);
-        document.getElementById(orderButtonId).style.display = 'block';
-    } else {
-        document.getElementById(priceDisplayId).innerHTML = '€0.00';
-        document.getElementById(orderButtonId).style.display = 'none';
-    }
-}
-
 function addToCart(item, lengthSelect) {
     const length = lengthSelect.value;
     if (length) {
