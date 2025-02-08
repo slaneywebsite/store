@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bedroom Category</title>
+  <!-- Optional: Bootstrap CSS for additional styling or modal functionality -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Facebook Chat Plugin -->
+  <div id="fb-root"></div>
+  <div data-layout="MEDIUM_ICON_COUNTER"
+     data-icon="CART"
+     data-fixed="true"
+     data-fixed-position="BOTTOM_RIGHT"
+     data-vertical-indent="80"
+     class="ec-cart-widget">
+</div>
+<div>
+  <script data-cfasync="false" type="text/javascript"
+          src="https://app.ecwid.com/script.js?84542002&data_platform=code"
+          charset="utf-8"></script>
+  <script>Ecwid.init();</script>
+</div>
+
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v10.0'
+      });
+    };
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!-- Replace YOUR_PAGE_ID with your actual Facebook Page ID -->
+  <div class="fb-customerchat" attribution="setup_tool" page_id="YOUR_PAGE_ID"></div>
+
+  <!-- Ecwid Product Browser for Bedroom Category -->
+  <div id="my-store-84542002"></div>
+  <div>
+    <script data-cfasync="false" type="text/javascript"
+            src="https://app.ecwid.com/script.js?84542002&data_platform=code"
+            charset="utf-8"></script>
+    <script type="text/javascript">
+      xProductBrowser("id=my-store-84542002", "defaultCategoryId=154757775");
+    </script>
+	
+	  <script type="text/javascript">
+    // Initialize Ecwid Mini Cart and Product Browser
+   
+    xProductBrowser("id=my-products-84542002");
+  
+    // Function to update the mini cart counter
+    function updateMiniCartCounter(cart) {
+      var counter = document.getElementById("miniCartCounter");
+      if (counter) {
+        counter.textContent = cart.totalItems || 0;
+      }
+    }
+  
+    // Wait until the Ecwid API is fully loaded
+    Ecwid.OnAPILoaded.add(function() {
+      // Update the counter immediately if cart data exists
+      if (Ecwid.Cart) {
+        updateMiniCartCounter(Ecwid.Cart);
+      }
+      // Listen for cart changes
+      Ecwid.OnCartChanged.add(function(cart) {
+        updateMiniCartCounter(cart);
+      });
+    });
+  </script>
+  </div>
+
+  <!-- Optional: Bootstrap JS (if you need additional functionality) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
