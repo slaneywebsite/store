@@ -610,6 +610,9 @@ select.form-control {
 /*About US End */
 
 /*facebook massnger*/
+html#ecwid_html body#ecwid_body .ec-size .ec-store> .ec-fbmessenger-chat{
+display: none !important;
+}
 .ec-fbmessenger-chat {
   position: fixed;
   bottom: 20px;
