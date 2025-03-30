@@ -1069,23 +1069,131 @@
                 <a class="text-white mb-2" href="Tiles"><i class="fa fa-angle-right mr-2"></i>Tiles Range</a>
             </div>
         </div>
-        
         <div class="col-lg-3 col-md-6 mb-5">
+        <div id="mc_embed_signup">
             <h4 class="text-primary mb-4">Newsletter</h4>
-            <form action="">
+            <form id="mc-embedded-subscribe-form" 
+                  action="https://slaneysidefurniture.us14.list-manage.com/subscribe/post-json?u=402c7ed37678f765659f5031d&amp;id=919274453d&c=?" 
+                  method="GET" 
+                  onsubmit="return validateForm(event)">
+        
                 <div class="form-group">
-                    <input type="text" class="form-control border-0" placeholder="Your Name" required="required" />
+                    <input type="text" name="FNAME" id="mce-FNAME" class="form-control border-0" placeholder="Your Name" required>
+                    <small class="text-danger d-none" id="name-error">Your name is required.</small>
                 </div>
+                
                 <div class="form-group">
-                    <input type="email" class="form-control border-0" placeholder="Your Email" required="required" />
+                    <input type="email" name="EMAIL" id="mce-EMAIL" class="form-control border-0" placeholder="Your Email" required>
+                    <small class="text-danger d-none" id="email-error">Please enter a valid email with '@'.</small>
                 </div>
+        
                 <div>
                     <button class="btn btn-lg btn-primary btn-block border-0" type="submit">Submit Now</button>
                 </div>
             </form>
         </div>
-    </div>
-
+        
+        <!-- Centered Pop-up Message -->
+        <div id="popup-message" class="popup d-none">
+            <p id="popup-text"></p>
+        </div>
+        
+        <style>
+        /* Pop-up styles */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #A72874;
+            color: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
+            text-align: center;
+            display: none;
+            z-index: 1000;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        /* Background overlay */
+        #popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 999;
+        }
+        
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translate(-50%, -55%); }
+            to { opacity: 1; transform: translate(-50%, -50%); }
+        }
+        </style>
+        
+        <script>
+        function validateForm(event) {
+            event.preventDefault(); // Prevent default form submission
+        
+            let isValid = true;
+            
+            // Get form fields
+            const nameField = document.getElementById("mce-FNAME");
+            const emailField = document.getElementById("mce-EMAIL");
+            const nameError = document.getElementById("name-error");
+            const emailError = document.getElementById("email-error");
+            const popupMessage = document.getElementById("popup-message");
+            const popupText = document.getElementById("popup-text");
+        
+            // Reset previous errors
+            nameError.classList.add("d-none");
+            emailError.classList.add("d-none");
+        
+            // Name validation
+            const nameValue = nameField.value.trim();
+            if (nameValue === "") {
+                nameError.classList.remove("d-none");
+                isValid = false;
+            }
+        
+            // Email validation (must contain '@')
+            if (!emailField.value.includes("@") || emailField.value.trim() === "") {
+                emailError.classList.remove("d-none");
+                isValid = false;
+            }
+        
+            // If validation is successful, send data to Mailchimp via AJAX
+            if (isValid) {
+                const formData = new FormData(event.target);
+                const params = new URLSearchParams(formData).toString();
+                const url = event.target.action + "&" + params;
+        
+                fetch(url, { method: "GET", mode: "no-cors" })
+                    .then(() => {
+                        // Set personalized message
+                        popupText.textContent = `Thank you, ${nameValue}, for subscribing!`;
+        
+                        // Show pop-up
+                        popupMessage.classList.remove("d-none");
+                        popupMessage.style.display = "block";
+                        event.target.reset(); // Clear form after submission
+        
+                        // Hide pop-up after 10 seconds
+                        setTimeout(() => {
+                            popupMessage.style.display = "none";
+                        }, 10000);
+                    })
+                    .catch(() => alert("There was an error. Please try again."));
+            }
+        
+            return false;
+        }
+        </script>        
     <!-- Messenger Button -->
     <div class="ec-fbmessenger-chat">
         <a href="http://m.me/SlaneysideInteriorsIre" target="_blank">
