@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiles Collection - Visit Our Showroom | Slaneyside</title>
+    <link href="../img/favicon.ico" rel="icon">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -12,6 +13,9 @@
             padding: 0;
             background-color: #f8f9fa;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         .container {
             max-width: 800px;
@@ -21,6 +25,7 @@
             border-radius: 8px;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
             text-align: center;
+            flex: 1;
         }
         h1 {
             color: #A72874;
@@ -74,8 +79,48 @@
             color: #A72874;
             margin-bottom: 20px;
         }
+        footer {
+            background-color: #000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        .footer-bottom a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-bottom a:hover {
+            color: #A72874;
+            text-decoration: none;
+        }
+        ul.feature-list {
+            text-align: left;
+            display: inline-block;
+            margin-bottom: 25px;
+            padding-left: 20px;
+        }
+        ul.feature-list li {
+            margin-bottom: 10px;
+            position: relative;
+            list-style-type: none;
+            padding-left: 25px;
+        }
+        ul.feature-list li:before {
+            content: "•";
+            color: #A72874;
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
     </style>
-    <!-- Font Awesome for tile icon -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -87,16 +132,22 @@
         <h1>Explore Our Tile Collection In Store</h1>
         <p>Our full range of premium tiles isn't available for online browsing, as we believe these beautiful surfaces need to be seen and felt in person to truly appreciate their quality.</p>
         <p>Visit our Wexford showroom to:</p>
-        <ul style="text-align: left; display: inline-block; margin-bottom: 25px;">
+        <ul class="feature-list">
             <li>See our complete tile collections in natural lighting</li>
             <li>Feel the texture and quality of each tile</li>
             <li>Get expert advice on the perfect tiles for your space</li>
             <li>Compare colors and patterns side-by-side</li>
             <li>Discuss installation options with our specialists</li>
+            <li>View our exclusive in-store only tile ranges</li>
         </ul>
         
         <div>
-            <a href="/" class="btn btn-outline">Back to Homepage</a>
+            <a href="/" class="btn btn-outline">
+                <i class="fas fa-home"></i> Back to Homepage
+            </a>
+            <a href="https://wa.me/353874339166" class="btn btn-primary">
+                <i class="fab fa-whatsapp"></i> Chat with Our Tile Expert
+            </a>
             <a href="https://maps.app.goo.gl/BhR8nW8h8nejCFrz8" class="btn btn-primary" target="_blank">
                 <i class="fas fa-map-marker-alt"></i> Visit Our Showroom
             </a>
@@ -106,10 +157,23 @@
             <p><strong>Slaneyside Tile Experts</strong><br>
             <i class="fas fa-phone"></i> <a href="tel:+353539236530">053 923 6530</a> | 
             <i class="fab fa-whatsapp"></i> <a href="https://wa.me/353874339166">WhatsApp</a></p>
-            <p>Main Dublin Road, Scarawalsh, Wexford, Y21 HP57</p>
-            <p>Opening Hours:<br>
+            <p><i class="fas fa-map-marker-alt"></i> Main Dublin Road, Scarawalsh, Wexford, Y21 HP57</p>
+            <p><i class="far fa-clock"></i> Opening Hours:<br>
             Mon-Fri: 9:00 AM - 6:00 PM | Sat: 9:30 AM - 6:00 PM | Sun: 2:00 PM - 6:00 PM</p>
         </div>
     </div>
+
+    <!-- Footer Bottom -->
+    <footer>
+        <div class="container" style="background-color: #000;">
+            <div class="footer-bottom">
+                <p class="m-0">
+                    &copy; <a href="https://www.slaneyside.ie/">slaneyside.ie 2025</a>
+                    <span> | </span>
+                    <a href="https://www.aadigitalworks.com">Website by AA Digitalworks | Website and SEO</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
