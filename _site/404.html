@@ -8,26 +8,19 @@
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300&display=swap');
 
         body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f9f9f9;
-            margin: 0;
-            text-align: center;
             font-family: 'Montserrat', sans-serif;
-            padding: 10px;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
         }
 
         .logo-container {
-            position: relative;
-            width: 100%;
-            max-width: 450px;
-            padding: 20px;
-            text-align: center;
             border: 2px solid #999;
-            margin-bottom: 20px;
+            padding: 20px;
+            max-width: 450px;
+            margin: 20px auto;
         }
 
         .main-title {
@@ -39,7 +32,6 @@
         }
 
         .subtitle {
-            font-family: 'Montserrat', sans-serif;
             font-size: 10px;
             color: #c399a2;
             letter-spacing: 4px;
@@ -47,19 +39,17 @@
 
         .est-text {
             font-size: 14px;
-            color: #000;
             margin-top: 15px;
         }
 
         .error-text {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
-            color: #333;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         .back-home {
-            margin-top: 15px;
+            margin: 30px 0;
         }
 
         .back-home a {
@@ -75,24 +65,45 @@
             background-color: #b08891;
         }
 
-        /* Responsive Design */
+        .link-section {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: left;
+        }
+
+        .link-group {
+            margin-top: 30px;
+        }
+
+        .link-group h3 {
+            font-size: 18px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .link-group ul {
+            list-style: none;
+            padding-left: 0;
+            line-height: 1.8;
+        }
+
+        .link-group ul li a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        .link-group ul li a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .main-title {
                 font-size: 28px;
-                letter-spacing: 3px;
             }
-
-            .subtitle {
-                font-size: 9px;
-            }
-
             .error-text {
-                font-size: 20px;
-            }
-
-            .back-home a {
-                padding: 8px 16px;
-                font-size: 14px;
+                font-size: 24px;
             }
         }
 
@@ -100,38 +111,81 @@
             .main-title {
                 font-size: 24px;
             }
-
-            .subtitle {
-                font-size: 8px;
-            }
-
             .error-text {
-                font-size: 18px;
-            }
-
-            .back-home a {
-                padding: 6px 12px;
-                font-size: 12px;
+                font-size: 20px;
             }
         }
-
     </style>
 </head>
 <body>
 
-    <!-- Logo -->
     <div class="logo-container">
         <div class="main-title">S L A N E Y S I D E</div>
         <div class="subtitle">C A R P E T S &nbsp;F U R N I T U R E &nbsp;T I L E S</div>
         <div class="est-text">Est 1944</div>
     </div>
 
-    <!-- Error Message -->
     <div class="error-text">404 - Page Not Found</div>
 
-    <!-- Back to Home Button -->
     <div class="back-home">
         <a href="/">Return to Home</a>
+    </div>
+
+    <div class="link-section">
+
+        <div class="link-group">
+            <h3>Main Pages</h3>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/bedroom">Bedroom Furniture</a></li>
+                <li><a href="/Living-Room-Furniture">Living Room Furniture</a></li>
+                <li><a href="/Kitchen-Furniture">Kitchen Furniture</a></li>
+                <li><a href="/Home-Office-&-Other">Home Office & Other</a></li>
+                <li><a href="/Lamps">Lamps</a></li>
+                <li><a href="/Distressed-Waxed-Pine">Distressed Waxed Pine</a></li>
+                <li><a href="/outdoor">Outdoor</a></li>
+            </ul>
+        </div>
+
+        <div class="link-group">
+            <h3>Flooring Collections</h3>
+            <ul>
+                <li><a href="/carpet">Carpet</a></li>
+                <li><a href="/vinyl">Vinyl</a></li>
+                <li><a href="/Timber">Timber</a></li>
+                <li><a href="/Tiles">Tiles</a></li>
+                <li><a href="/Rugs">Rugs</a></li>
+            </ul>
+        </div>
+
+        <div class="link-group">
+            <h3>Shop by County</h3>
+            <ul>
+                <li><a href="/county/Cork">Cork</a></li>
+                <li><a href="/county/Kilkenny">Kilkenny</a></li>
+                <li><a href="/county/Waterford">Waterford</a></li>
+                <li><a href="/county/Wexford">Wexford</a></li>
+                <li><a href="/county/Dublin">Dublin</a></li>
+                <li><a href="/county/Bray">Bray</a></li>
+                <li><a href="/county/Carlow">Carlow</a></li>
+                <li><a href="/county/Drogheda">Drogheda</a></li>
+                <li><a href="/county/Navan">Navan</a></li>
+                <li><a href="/county/Swords">Swords</a></li>
+                <li><a href="/county/Galway">Galway</a></li>
+                <li><a href="/county/Limerick">Limerick</a></li>
+                <li><a href="/county/Clonmel">Clonmel</a></li>
+                <li><a href="/county/Ennis">Ennis</a></li>
+                <li><a href="/county/Killarney">Killarney</a></li>
+                <li><a href="/county/Tralee">Tralee</a></li>
+                <li><a href="/county/Letterkenny">Letterkenny</a></li>
+                <li><a href="/county/Buncrana">Buncrana</a></li>
+                <li><a href="/county/Ballybofey-Stranorlar">Ballybofey–Stranorlar</a></li>
+                <li><a href="/county/Cavan">Cavan</a></li>
+                <li><a href="/county/Monaghan">Monaghan</a></li>
+                <li><a href="/county/Sligo">Sligo</a></li>
+            </ul>
+        </div>
+
     </div>
 
 </body>
