@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Validate phone number
-        const phonePattern = /^\+353[0-9]{1,9}$/;
+        const phonePattern = /^(?:\+353|0)?\d{7,9}$/;
         const phoneError = document.getElementById('phoneError');
 
         if (!phonePattern.test(phone)) {
