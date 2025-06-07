@@ -48,6 +48,11 @@
   border-radius: 8px;
 }
 
+html#ecwid_html body#ecwid_body .ecwid{
+    max-width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 .ecsp-Product {
   display: flex;
   flex-direction: column;
