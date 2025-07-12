@@ -384,7 +384,6 @@ iframe {
 .locations{
   max-width: 150px;
 }
-
 /*end for Locations*/
 /*google Review*/
 
@@ -1340,10 +1339,22 @@ pre code {
   margin-left: auto;
 }
 
+@media (max-width: 767.98px) {
+  .py-3 {
+    font-size: 30px;
+  }
+
+  .dropdown-menu.show {
+    font-size: 25px !important;
+  }
+}
+
+
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
   }
+
 }
 
 @media (min-width: 768px) {

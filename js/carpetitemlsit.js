@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Create filter controls
         const filterContainer = document.createElement('div');
-        filterContainer.className = 'mb-3';
+        filterContainer.className = 'col-10';
 
         // Price Filter
         const priceFilter = document.createElement('select');
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
             sortedBrands.forEach((brand, brandIndex) => {
                 const brandDiv = document.createElement('div');
                 brandDiv.id = `brand-${brandIndex + 1}`;
-                brandDiv.className = 'brand-content col-md-3 col-sm-6 mb-4'; // Bootstrap layout with 4 columns per row
+                brandDiv.className = 'brand-content col-lg-2 col-md-6 mb-4'; // Bootstrap layout with 4 columns per row
     
                 // Use the first item of the brand for its display info
                 const firstItem = brand.items[0];
@@ -324,7 +324,7 @@ window.scrollTo({
     // Loop through the items of the brand and create cards for each
     brand.items.forEach((item, itemIndex) => {
         const itemDiv = document.createElement('div');
-        itemDiv.className = 'col-md-3 col-sm-6 mb-4';
+        itemDiv.className = 'col-lg-2 col-md-6 mb-4';
 
         const cardDiv = document.createElement('div');
         cardDiv.className = 'card border-0 mb-2';
