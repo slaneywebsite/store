@@ -384,6 +384,7 @@ iframe {
 .locations{
   max-width: 150px;
 }
+
 /*end for Locations*/
 /*google Review*/
 
@@ -1339,34 +1340,39 @@ pre code {
   margin-left: auto;
 }
 
-@media (max-width: 767.98px) {
+ .dropdown-menu.show {
+    font-size: 30px !important;
+  }
+
   .py-3 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
-
-  .dropdown-menu.show {
-    font-size: 25px !important;
-  }
-}
-
 
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
   }
-
 }
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
     max-width: 720px;
   }
+
  
 }
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
     max-width: 960px;
+  }
+
+   .dropdown-menu.show {
+    font-size: 15px !important;
+  }
+
+  .py-3 {
+    font-size: 15px !important;
   }
 }
 
@@ -1381,6 +1387,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  justify-content: center;
 }
 
 .no-gutters {

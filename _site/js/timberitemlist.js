@@ -70,7 +70,7 @@ function generateBrandList(brands) {
 
     brands.forEach((brand, brandIndex) => {
         const brandDiv = document.createElement('div');
-        brandDiv.className = 'brand-content col-md-3 col-sm-6 mb-4';
+        brandDiv.className = 'brand-content col-lg-2 col-md-6 mb-4';
 
         // Get details from the first item in the brand
         const firstItem = brand.items[0];
@@ -152,7 +152,7 @@ function displayBrandItems(brand) {
     // Loop through the brand's items and display them
     brand.items.forEach((item, itemIndex) => {
         const itemDiv = document.createElement('div');
-        itemDiv.className = 'col-md-3 col-sm-6 mb-4';
+        itemDiv.className = 'col-lg-2 col-md-6 mb-4';
 
         const cardDiv = document.createElement('div');
         cardDiv.className = 'card border-0 mb-2';
