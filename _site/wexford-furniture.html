@@ -89,7 +89,22 @@
         ]
     }
     </script>
-    
+    <style>
+            .text-primary {
+        color: #8a1a5c !important; /* Darker shade of primary color */
+    }
+
+        .btn-primary {
+            background-color: #8a1a5c;
+            border-color: #8a1a5c;
+            color: white;
+        }
+
+        /* For dark backgrounds */
+        .bg-dark .text-white {
+            color: #f8f9fa !important; /* Brighter white */
+        }
+    </style>
     <!-- Rest of your head content remains unchanged -->
     <meta property="og:site_name" content="Slaneyside Carpet Furniture Tiles">
     <meta property="og:image" content="https://www.slaneyside.ie/img/favicon.ico">
@@ -132,9 +147,10 @@
                 <a href="/" class="navbar-brand d-flex align-items-center">
                     <img src="../img/Logo/logo.webp" alt="Logo" class="logo-img">
                 </a>                                            
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+    <span class="sr-only">Toggle navigation</span>
+</button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="/" class="nav-item nav-link active">Home</a>
@@ -142,21 +158,21 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Products</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a href="../carpet" class="dropdown-item">Carpet</a>
-                                <a href="../vinyl" class="dropdown-item">Vinyl</a>
-                                <a href="../Timber" class="dropdown-item">Laminate Range</a>
-                                <a href="../Tiles" class="dropdown-item">Tiles</a>
-                                <a href="../bedroom" class="dropdown-item">Bedroom Furniture</a>
-                                <a href="../Kitchen-Furniture" class="dropdown-item">Kitchen Furniture</a>
-                                <a href="../Living-Room-Furniture" class="dropdown-item">Living Room Furniture</a>
-                                <a href="../outdoor" class="dropdown-item">Outdoor</a>
-                                <a href="../Distressed-Waxed-Pine" class="dropdown-item">Distressed Waxed Pine</a>
-                                <a href="../Rugs" class="dropdown-item">Rugs</a>
-                                <a href="../Home-Office-&-Other" class="dropdown-item">Home Office & Other</a>
-                                <a href="../Lamps" class="dropdown-item">Lamps</a>
+                                <a href="../carpet" class="dropdown-item" aria-label="Browse our carpet collection">Carpet</a>
+                                <a href="../vinyl" class="dropdown-item" aria-label="Explore vinyl flooring options">Vinyl</a>
+                                <a href="../Timber" class="dropdown-item"  aria-label="Explore Laminate Range flooring options">Laminate Range</a>
+                                <a href="../Tiles" class="dropdown-item" aria-label="Tiles pags">Tiles</a>
+                                <a href="../bedroom" class="dropdown-item" aria-label="Browse our Bedroom Furniture">Bedroom Furniture</a>
+                                <a href="../Kitchen-Furniture" class="dropdown-item" aria-label="Find our Kitchen Furniture">Kitchen Furniture</a>
+                                <a href="../Living-Room-Furniture" class="dropdown-item" aria-label="Our Living Room Furnitur collection">Living Room Furniture</a>
+                                <a href="../outdoor" class="dropdown-item" aria-label="Our Outdoor Furnitur collection">Outdoor</a>
+                                <a href="../Distressed-Waxed-Pine" class="dropdown-item" aria-label="Distressed Waxed Pine collection">Distressed Waxed Pine</a>
+                                <a href="../Rugs" class="dropdown-item" aria-label="Our Rugs collection">Rugs</a>
+                                <a href="../Home-Office-&-Other" class="dropdown-item" aria-label="Home Office collection">Home Office & Other</a>
+                                <a href="../Lamps" class="dropdown-item" aria-label="Our Lamps collection">Lamps</a>
                             </div>
                         </div>
-                        <a href="#Footer" class="nav-item nav-link">Get In Touch</a>
+                        <a href="#Footer" class="nav-item nav-link" aria-label="Get in Touch">Get In Touch</a>
                     </div>
                 </div>
             </nav>
@@ -409,11 +425,10 @@
 <div class="container-fluid py-5">
     <div class="container py-5">
         <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-8 col text-center mb-4">
-                <h6 class="text-primary font-weight-normal text-uppercase mb-3 custom-header">New Arrivals</h6>
-                <h2 class="mb-4">Special Offers</h2>
-            </div>
-        </div>
+    <div class="col-lg-6 col-md-8 col text-center mb-4">
+        <h2 class="text-primary font-weight-normal text-uppercase mb-3">Special Offers</h2>
+    </div>
+</div>
         <div class="row">
             <div class="col-12 text-center mb-2">
                 <ul class="list-inline mb-4" id="portfolio-flters">
@@ -577,11 +592,11 @@
 <!-- Testimonial Start -->
 <div class="container-fluid">
     <div class="container">
-        <div class="row">
-            <div class="col-md-7 py-5 pr-md-5">
-                <h6 class="text-primary font-weight-normal text-uppercase mb-3 pt-5">Google Reviews</h6>
-                <h2 class="mb-4 section-title">What Our Clients Say</h2>
-                <div class="owl-carousel testimonial-carousel position-relative pb-5 mb-md-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-primary font-weight-normal text-uppercase mb-3 pt-5">Google Reviews</h2>
+                <h3 class="mb-4 section-title">What Our Clients Say</h3>
+                <div class="owl-carousel testimonial-carousel position-relative pb-5 mb-md-5 cen">
                     <div class="d-flex flex-column">
                         <div class="d-flex align-items-center mb-3">
                             <img class="img-fluid rounded-circle" src="https://lh3.googleusercontent.com/a-/ALV-UjXshEpb2NvMD2y6g3CSGOYEAP2cW5yD1rieTLqfsZ9rVnRMbnw=w75-h75-p-rp-mo-br100" style="width: 60px; height: 60px;" alt="">
@@ -847,11 +862,13 @@
                       onsubmit="return validateForm(event)">
             
                     <div class="form-group">
+                        <label for="newsletter-email" class="sr-only">Your Name</label>
                         <input type="text" name="FNAME" id="mce-FNAME" class="form-control border-0" placeholder="Your Name" required>
                         <small class="text-danger d-none" id="name-error">Your name is required.</small>
                     </div>
                     
                     <div class="form-group">
+                        <label for="newsletter-email" class="sr-only">Your Email</label>
                         <input type="email" name="EMAIL" id="mce-EMAIL" class="form-control border-0" placeholder="Your Email" required>
                         <small class="text-danger d-none" id="email-error">Please enter a valid email with '@'.</small>
                     </div>
