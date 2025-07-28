@@ -9930,6 +9930,7 @@ button.bg-dark:focus {
 .text-left {
   text-align: left !important;
       text-shadow: 0 0 black;
+      font-size: 20px;
 }
 
 .text-right {
@@ -10031,7 +10032,7 @@ button.bg-dark:focus {
 
 
 .text-primary {
-  color: #DF62AD !important;
+  color: #ff0099 !important;
   text-shadow: 0 0 black;
 }
 
