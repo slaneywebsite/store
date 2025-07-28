@@ -5099,6 +5099,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.1);
+  font-size: 35px;
 }
 
 .navbar-dark .navbar-toggler-icon {
