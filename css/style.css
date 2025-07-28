@@ -8193,6 +8193,7 @@ button.bg-dark:focus {
 .mb-4,
 .my-4 {
   margin-bottom: 1.5rem !important;
+  text-shadow: 0 0 black;
 }
 
 .ml-4,
@@ -9928,6 +9929,7 @@ button.bg-dark:focus {
 
 .text-left {
   text-align: left !important;
+      text-shadow: 0 0 black;
 }
 
 .text-right {
@@ -10030,6 +10032,7 @@ button.bg-dark:focus {
 
 .text-primary {
   color: #DF62AD !important;
+  text-shadow: 0 0 black;
 }
 
 a.text-primary:hover, a.text-primary:focus {
