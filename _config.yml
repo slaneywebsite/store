@@ -1,11 +1,69 @@
+---
 title: "Slaneyside"
 description: "Shop Sofas, Bedroom Furniture, Mattresses, Outdoor, Living Room & More - Home Furniture at Slaneyside"
-baseurl: ""  # Adjust according to your repo name
-url: "https://www.slaneyside.ie/"  # Replace with your GitHub username
-
----
+baseurl: ""
+url: "https://www.slaneyside.ie/"
 layout: default
-title: "Page Not Found"
 permalink: /404.html
----
+redirect_from:
+  # Carpet
+  - /carpets: /carpet/
+  - /post/get-the-best-quality-carpets-in-enniscorthy-co-wexford-slaneyside: /carpet/
+  - /post/the-best-place-to-shop-for-carpets-in-the-south-east: /carpet/
+  - /post/slaneyside-the-best-value-carpet-store-in-the-south-east-of-ireland: /carpet/
 
+  # Mattresses
+  - /mattresses: /mattresses/
+  - /post/get-a-quality-mattress-at-slaneyside-enniscorthy-wexford-ireland: /mattresses/
+
+  # Clearance
+  - /clearance: /clearance/
+  - /post/special-offer: /clearance/
+
+  # Sofas / Living Room
+  - /sofas: /Living-Room-Furniture/
+  - /sofas/1000: /Living-Room-Furniture/
+  - /post/on-sale-luxurious-turquoise-corner-suite: /Living-Room-Furniture/
+  - /post/grace-3-2-suite-sofa-elegant-and-comfortable-couch: /Living-Room-Furniture/
+  - /post/etc-reclining-clearance--sofa-couch--corner-unit: /Living-Room-Furniture/
+  - /chairs: /Living-Room-Furniture/
+
+  # Dining / Kitchen
+  - /dining: /Kitchen-Furniture/
+  - /post/beautiful-dining-sets-from-slaneyside-delivered-nationwide-ireland: /Kitchen-Furniture/
+
+  # Rugs
+  - /rugs: /Rugs/
+  - /post/upgrade-your-home-decor-with-slaneyside-s-rugs-nationwide-delivery-ireland: /Rugs/
+
+  # Timber / Vinyl / Tiles
+  - /timberflooring: /Timber/
+  - /post/trending-flooring-for-your-home: /Timber/
+  - /Vinyl: /vinyl/
+  - /post/not-all-floors-are-created-equal-slaneyside-vinyl-flooring-enniscorthy-wexford-ireland: /vinyl/
+  - /tiles: /Tiles/
+
+  # Bedroom
+  - /bedroom: /bedroom/
+  - /post/slaneyside-carpets-and-furniture-your-one-stop-shop-for-all-your-bedroom-furniture-needs-in-the-so: /bedroom/
+  - /post/slaneyside-carpets-and-furniture-your-one-stop-shop-for-all-your-bedroom-furniture-needs-in-the-so?utm_source=facebook&utm_medium=blog.post-promoter&utm_campaign=91707519-88dc-46c9-8d5b-bee823cc76d1: /bedroom/
+
+  # Blog
+  - /blog: /blog/
+  - /blog/page/4: /blog/
+  - /blog/page/7: /blog/
+  - /blog/page/8: /blog/
+  - /post/the-benefits-of-buying-furniture-from-slaneyside-in-wexford-ireland: /blog/
+  - /post/how-to-shop-for-furniture-that-will-last: /blog/
+  - /post/happy-new-year-from-slaneyside-carpets-and-furniture: /blog/
+  - /post/the-best-value-vinyl-in-the-south-east-of-ireland-from-slaneyside-carpets-and-furniture-in-enniscort: /vinyl/
+
+  # Members / API
+  - /members-area/carpetmaster123/profile: /members-area/
+  - /_api/one-app-session-web/v3/businesses: /
+
+  # Other
+  - /products-7: /products/
+  - /category/all-products: /products/
+  - /img/favicon.ico: /img/favicon.ico
+---
