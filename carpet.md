@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Carpet"
+title: "carpet"
 redirect_from:
   - /carpets
   - /post/get-the-best-quality-carpets-in-enniscorthy-co-wexford-slaneyside
