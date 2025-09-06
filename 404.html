@@ -116,6 +116,47 @@
             }
         }
     </style>
+ <script>
+    // Old -> new URLs mapping
+    const redirects = {
+      "/carpets": "/carpet/",
+      "/post/get-a-quality-mattress-at-slaneyside-enniscorthy-wexford-ireland": "/mattresses/",
+      "/clearance": "/clearance/",
+      "/sofas": "/Living-Room-Furniture/",
+      "/sofas/1000": "/Living-Room-Furniture/",
+      "/post/on-sale-luxurious-turquoise-corner-suite": "/Living-Room-Furniture/",
+      "/post/grace-3-2-suite-sofa-elegant-and-comfortable-couch": "/Living-Room-Furniture/",
+      "/post/etc-reclining-clearance--sofa-couch--corner-unit": "/Living-Room-Furniture/",
+      "/chairs": "/Living-Room-Furniture/",
+      "/dining": "/Kitchen-Furniture/",
+      "/post/beautiful-dining-sets-from-slaneyside-delivered-nationwide-ireland": "/Kitchen-Furniture/",
+      "/rugs": "/Rugs/",
+      "/post/upgrade-your-home-decor-with-slaneyside-s-rugs-nationwide-delivery-ireland": "/Rugs/",
+      "/timberflooring": "/Timber/",
+      "/post/trending-flooring-for-your-home": "/Timber/",
+      "/Vinyl": "/vinyl/",
+      "/post/not-all-floors-are-created-equal-slaneyside-vinyl-flooring-enniscorthy-wexford-ireland": "/vinyl/",
+      "/tiles": "/Tiles/",
+      "/bedroom": "/bedroom/",
+      "/post/slaneyside-carpets-and-furniture-your-one-stop-shop-for-all-your-bedroom-furniture-needs-in-the-so": "/bedroom/",
+      "/blog": "/blog/",
+      "/blog/page/4": "/blog/",
+      "/blog/page/7": "/blog/",
+      "/blog/page/8": "/blog/",
+      "/post/the-benefits-of-buying-furniture-from-slaneyside-in-wexford-ireland": "/blog/",
+      "/post/how-to-shop-for-furniture-that-will-last": "/blog/",
+      "/post/happy-new-year-from-slaneyside-carpets-and-furniture": "/blog/",
+      "/products-7": "/products/",
+      "/category/all-products": "/products/",
+      "/members-area/carpetmaster123/profile": "/members-area/",
+      "/_api/one-app-session-web/v3/businesses": "/"
+    };
+
+    const path = window.location.pathname;
+    if (redirects[path]) {
+      window.location.replace(redirects[path]);
+    }
+  </script>
 </head>
 <body>
 
