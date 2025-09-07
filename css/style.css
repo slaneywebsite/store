@@ -220,16 +220,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
             }
         }
 /*end klarna*/
- /*timber items */
- .item-info p {
-  font-size: 0.875rem; /* Smaller text for better readability */
-  margin-bottom: 0.5rem;
-  text-align: left; /* Align text to the left */
-}
-
-.item-info strong {
-  font-weight: bold;
-}
 
 .card-body {
   padding: 1rem;
