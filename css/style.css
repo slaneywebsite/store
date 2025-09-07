@@ -95,6 +95,131 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
+
+/*Klarna*/
+ /* Improved Klarna Banner */
+        .klarna-banner {
+            background: linear-gradient(135deg, #fff8e1 0%, #ffb3ec 100%);
+            border-left: 6px solid #d64d7e;
+            padding: 25px 30px;
+            border-radius: 10px;
+            margin: 25px 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .klarna-banner::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100px;
+            height: 100px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23d64d7e" opacity="0.2"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2z"/></svg>');
+            background-repeat: no-repeat;
+            opacity: 0.15;
+            transform: rotate(15deg);
+        }
+        
+        .klarna-banner h2 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .klarna-banner p {
+            font-size: 18px;
+            margin-bottom: 18px;
+            color: #2c3e50;
+            line-height: 1.5;
+        }
+        
+        .klarna-banner ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .klarna-banner li {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border: 1px solid rgba(214, 77, 126, 0.3);
+        }
+        
+        .klarna-banner li::before {
+            content: "✓";
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        
+        .disclaimer {
+            font-size: 15px;
+            color: #7f8c8d;
+            margin-bottom: 22px;
+            font-style: italic;
+        }
+        
+        .cta-button {
+            background-color: #d64d7e;
+            color: white;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(214, 77, 126, 0.4);
+            border: 2px solid transparent;
+        }
+        
+        .cta-button:hover {
+            background-color: #c23a6d;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(214, 77, 126, 0.5);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .klarna-banner {
+                padding: 20px;
+            }
+            
+            .klarna-banner h2 {
+                font-size: 24px;
+            }
+            
+            .klarna-banner p {
+                font-size: 16px;
+            }
+            
+            .klarna-banner ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .klarna-banner li {
+                width: 100%;
+                max-width: 300px;
+                text-align: left;
+            }
+        }
+/*end klarna*/
  /*timber items */
  .item-info p {
   font-size: 0.875rem; /* Smaller text for better readability */
