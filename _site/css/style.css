@@ -36,9 +36,26 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+
+/* Center the Ecwid search bar */
+.search-wrapper {
+    text-align: center;
+}
+
+.ecwid-search-container {
+    display: inline-block !important; /* Make it inline so it can be centered */
+    width: 400px !important; /* fixed width for centering */
+    max-width: 90%; /* responsive */
+}
+
+.ecwid-search-container input {
+    width: 100% !important; /* make input fill the container */
+    box-sizing: border-box;
+}
 .grid__categories:first-child{
   justify-content: center !important;
 }
+
 /*main page items from online website*/
 .product-image {
   width: 100%;
@@ -95,16 +112,131 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
- /*timber items */
- .item-info p {
-  font-size: 0.875rem; /* Smaller text for better readability */
-  margin-bottom: 0.5rem;
-  text-align: left; /* Align text to the left */
-}
 
-.item-info strong {
-  font-weight: bold;
-}
+/*Klarna*/
+ /* Improved Klarna Banner */
+        .klarna-banner {
+            background: linear-gradient(135deg, #fff8e1 0%, #ffb3ec 100%);
+            border-left: 6px solid #d64d7e;
+            padding: 25px 30px;
+            border-radius: 10px;
+            margin: 25px 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .klarna-banner::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100px;
+            height: 100px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23d64d7e" opacity="0.2"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2z"/></svg>');
+            background-repeat: no-repeat;
+            opacity: 0.15;
+            transform: rotate(15deg);
+        }
+        
+        .klarna-banner h2 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .klarna-banner p {
+            font-size: 18px;
+            margin-bottom: 18px;
+            color: #2c3e50;
+            line-height: 1.5;
+        }
+        
+        .klarna-banner ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .klarna-banner li {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border: 1px solid rgba(214, 77, 126, 0.3);
+        }
+        
+        .klarna-banner li::before {
+            content: "✓";
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        
+        .disclaimer {
+            font-size: 15px;
+            color: #7f8c8d;
+            margin-bottom: 22px;
+            font-style: italic;
+        }
+        
+        .cta-button {
+            background-color: #d64d7e;
+            color: white;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(214, 77, 126, 0.4);
+            border: 2px solid transparent;
+        }
+        
+        .cta-button:hover {
+            background-color: #c23a6d;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(214, 77, 126, 0.5);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .klarna-banner {
+                padding: 20px;
+            }
+            
+            .klarna-banner h2 {
+                font-size: 24px;
+            }
+            
+            .klarna-banner p {
+                font-size: 16px;
+            }
+            
+            .klarna-banner ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .klarna-banner li {
+                width: 100%;
+                max-width: 300px;
+                text-align: left;
+            }
+        }
+/*end klarna*/
 
 .card-body {
   padding: 1rem;
@@ -722,7 +854,92 @@ a:hover, a:focus, a:active {
   text-decoration: none !important; 
 }
 /*end items a link*/
-
+  /* FAQ Section Styles */
+        .faq-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .faq-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .faq-question:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .faq-question::after {
+            content: '\002B';
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 20px 20px;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .faq-section h2 {
+                font-size: 2rem;
+            }
+            
+            .faq-question {
+                padding: 15px;
+                font-size: 1rem;
+            }
+            
+            .faq-answer {
+                padding: 0 15px;
+            }
+            
+            .faq-item.active .faq-answer {
+                padding: 0 15px 15px;
+            }
+        }
+/* End FAQ Section Styles */
 /*Strat carousel*/
 .center{
   margin-top: 20%;

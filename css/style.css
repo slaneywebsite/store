@@ -36,9 +36,26 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+
+/* Center the Ecwid search bar */
+.search-wrapper {
+    text-align: center;
+}
+
+.ecwid-search-container {
+    display: inline-block !important; /* Make it inline so it can be centered */
+    width: 400px !important; /* fixed width for centering */
+    max-width: 90%; /* responsive */
+}
+
+.ecwid-search-container input {
+    width: 100% !important; /* make input fill the container */
+    box-sizing: border-box;
+}
 .grid__categories:first-child{
   justify-content: center !important;
 }
+
 /*main page items from online website*/
 .product-image {
   width: 100%;

@@ -116,6 +116,47 @@
             }
         }
     </style>
+ <script>
+    // Old -> new URLs mapping
+    const redirects = {
+      "/carpets": "/carpet",
+      "/post/get-a-quality-mattress-at-slaneyside-enniscorthy-wexford-ireland": "/bedroom#!/Mattresses/c/157180261",
+      "/clearance": "/",
+      "/sofas": "/Living-Room-Furniture",
+      "/sofas/1000": "/Living-Room-Furniture",
+      "/post/on-sale-luxurious-turquoise-corner-suite": "/Living-Room-Furniture",
+      "/post/grace-3-2-suite-sofa-elegant-and-comfortable-couch": "/Living-Room-Furniture",
+      "/post/etc-reclining-clearance--sofa-couch--corner-unit": "/Living-Room-Furniture",
+      "/chairs": "/Living-Room-Furniture",
+      "/dining": "/Kitchen-Furniture",
+      "/post/beautiful-dining-sets-from-slaneyside-delivered-nationwide-ireland": "/Kitchen-Furniture",
+      "/rugs": "/Rugs",
+      "/post/upgrade-your-home-decor-with-slaneyside-s-rugs-nationwide-delivery-ireland": "/Rugs",
+      "/timberflooring": "/Timber",
+      "/post/trending-flooring-for-your-home": "/Timber",
+      "/Vinyl": "/vinyl",
+      "/post/not-all-floors-are-created-equal-slaneyside-vinyl-flooring-enniscorthy-wexford-ireland": "/vinyl",
+      "/tiles": "/Tiles",
+      "/bedroom": "/bedroom",
+      "/post/slaneyside-carpets-and-furniture-your-one-stop-shop-for-all-your-bedroom-furniture-needs-in-the-so": "/bedroom",
+      "/blog": "/",
+      "/blog/page/4": "/",
+      "/blog/page/7": "/",
+      "/blog/page/8": "/",
+      "/post/the-benefits-of-buying-furniture-from-slaneyside-in-wexford-ireland": "/",
+      "/post/how-to-shop-for-furniture-that-will-last": "/",
+      "/post/happy-new-year-from-slaneyside-carpets-and-furniture": "/",
+      "/products-7": "/",
+      "/category/all-products": "/",
+      "/members-area/carpetmaster123/profile": "/",
+      "/_api/one-app-session-web/v3/businesses": "/"
+    };
+
+    const path = window.location.pathname;
+    if (redirects[path]) {
+      window.location.replace(redirects[path]);
+    }
+  </script>
 </head>
 <body>
 
@@ -124,7 +165,16 @@
         <div class="subtitle">C A R P E T S &nbsp;F U R N I T U R E &nbsp;T I L E S</div>
         <div class="est-text">Est 1944</div>
     </div>
+ <!-- Ecwid Centered -->
+            <div class="search-wrapper mt-3 text-center">
+                <div id="my-search-84542002" class="ecwid-search-container"></div>
+            </div>
 
+            <script data-cfasync="false" type="text/javascript" src="https://app.shopsettings.com/script.js?84542002&data_platform=code&data_date=2025-10-11" charset="utf-8"></script>
+            <script type="text/javascript"> xSearch("id=my-search-84542002"); </script>
+        </div>
+    </div>
+    <!-- Navbar End -->
     <div class="error-text">404 - Page Not Found</div>
 
     <div class="back-home">
