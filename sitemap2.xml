@@ -1,13 +1,8 @@
 This XML file does not appear to have any style information associated with it. The document tree is shown below.
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url>
-<loc>https://slaneysidefurniture.ie/</loc>
-<priority>1.0</priority>
-<changefreq>weekly</changefreq>
-</url>
-<url>
 <loc>https://www.slaneyside.ie/products/</loc>
-<priority>0.5</priority>
+<priority>1.0</priority>
 <changefreq>weekly</changefreq>
 </url>
 <url>
@@ -4546,4 +4541,5 @@ This XML file does not appear to have any style information associated with it. 
 <changefreq>weekly</changefreq>
 <lastmod>2025-09-07</lastmod>
 </url>
+
 </urlset>
