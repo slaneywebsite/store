@@ -936,6 +936,27 @@
 <!-- Features End -->
 
 <!-- Projects Start -->
+ <!-- Ecwid Product Feed (Hide Categories, Show Only Products) -->
+<style>
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__categories--advanced ,
+html#ecwid_html body#ecwid_body .ec-size.ec-size--s .ec-store .ec-footer{
+  display: none !important;
+}
+</style>
+
+<div id="my-store-84542002"></div>
+<script data-cfasync="false" src="https://app.ecwid.com/script.js?84542002&data_platform=code" charset="utf-8"></script>
+<script>
+  Ecwid.init();
+  xProductBrowser(
+    "categoriesPerRow=0",
+    "views=grid(20,3) list(60) table(60)",
+    "categoryView=grid",
+    "searchView=grid",
+    "id=my-store-84542002"
+  );
+</script>
+ <!-- End Ecwid Product Feed (Hide Categories, Show Only Products) -->
 <div class="container-fluid py-5">
     <div class="container py-5">
         <div class="row justify-content-center">
